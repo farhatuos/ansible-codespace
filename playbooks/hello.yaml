@@ -1,0 +1,6 @@
+- name: Hello world playbook
+  hosts: local
+  tasks:
+  - name: Print hello message
+    debug:
+      msg: "Hello, DevOps students!"
