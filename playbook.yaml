@@ -1,0 +1,7 @@
+---
+- name: Create and Print Message for a File
+  hosts: local
+  become: yes  # To elevate privileges if required
+
+  roles:
+    - create_file_role

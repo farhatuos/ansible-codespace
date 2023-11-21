@@ -1,0 +1,9 @@
+---
+- name: Create a file in the temporary directory
+  ansible.builtin.file:
+    path: "/tmp/example_file.txt"
+    state: touch
+
+- name: Print a message indicating file creation
+  ansible.builtin.debug:
+    msg: "File created successfully in the temporary directory."
